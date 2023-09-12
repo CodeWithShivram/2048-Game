@@ -1,9 +1,16 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    background-image: url("backImg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    overflow: hidden;
 }
 hr{
     width: 500px;
+}
+#creator{
+    font-family: cursive;
 }
 #board{
     width: 400px;
@@ -13,6 +20,21 @@ hr{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+}
+.container{
+    margin: 20px;
+}
+label{
+    margin-top: 10px;
+    color: white;
+}
+#ArrowUp, #ArrowDown, #ArrowLeft ,#ArrowRight{
+    display: inline-block;
+    margin: 5px;
+    border: 2px solid white;
+    padding: 3px;
+    font-weight:bolder;
+    color: white;
 }
 .tile{
     width: 90px;

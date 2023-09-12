@@ -42,7 +42,13 @@ function updateTile(tile, num) {
         }                
     }
 }
-
+function colorKey(key){
+    colorVal=document.getElementById(key)
+    setTimeout(function() {
+      return  colorVal.style.backgroundColor=""
+    }, 80); 
+    return colorVal.style.backgroundColor = "yellow"
+}
 document.addEventListener('keyup', (e) => {
     if (e.code == "ArrowLeft") {
         slideLeft();
@@ -55,12 +61,12 @@ document.addEventListener('keyup', (e) => {
     else if (e.code == "ArrowUp") {
         slideUp();
         setTwo();
-
-    }
+      }
     else if (e.code == "ArrowDown") {
         slideDown();
         setTwo();
-    }
+            }
+     colorKey(e.code)
     document.getElementById("score").innerText = score;
 })
 
@@ -169,3 +175,4 @@ function hasEmptyTile() {
     }
     return false;
 }
+
